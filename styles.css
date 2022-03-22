@@ -1,46 +1,188 @@
+@font-face {
+    font-family: 'NeueHaasGroteskText Pro';
+    src: url('NHaasGroteskTXPro-75Bd.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NeueHaasGroteskText Pro';
+    src: url('NHaasGroteskTXPro-55Rg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NeueHaasGroteskText Pro Md';
+    src: url('NHaasGroteskTXPro-65Md.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pulp Display';
+    src: url('PulpDisplay-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pulp Display';
+    src: url('PulpDisplay-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pulp Display Extra';
+    src: url('PulpDisplay-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pulp Display Extra';
+    src: url('PulpDisplay-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pulp Display Extra';
+    src: url('PulpDisplay-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pulp Display';
+    src: url('PulpDisplay-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pulp Display Extra';
+    src: url('PulpDisplay-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pulp Display';
+    src: url('PulpDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pulp Display';
+    src: url('PulpDisplay-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
 body{
     background-color: #f2f2f2;
     background-image: url(img/background-01.png);
-    background-size: 4000px;
+    background-repeat: no-repeat;
+    background-size:2800px;
 }
 
 h2{
-   font-family: "Neue Haas Grotesk Text Pro", "75 Bold"; 
-   font-size: 96px;
+   font-family: "NeueHaasGroteskText Pro", "Bold"; 
+   font-size: 82px;
    letter-spacing: -2px;
-   padding: 10px 0px 0px 82px; 
+   padding: 10px 0px 0px 8%; 
    margin: 80px 0px 0px 0px;
 }
 
 p{
-   font-family: "Neue Haas Grotesk Text Pro", "55 Roman"; 
-   font-size: 60px;
+   font-family: "NeueHaasGroteskText Pro", "Roman"; 
+   font-size: 42px;
    letter-spacing: -1px;
-   padding: 10px 0px 0px 82px; 
+   padding: 10px 0px 0px 8%; 
    margin: 10px 0px 0px 0px;
 }
 
+a{
+    text-decoration: none;
+}
+
 #links{
-    margin-top: 88px;
+    margin-top: 52px;
 }
 
 #links a{
     font-family: "Pulp Display", "semi bold"; 
-    font-size: 60px;
+    font-size: 36px;
     display: block;
-    padding: 42px 0px 42px 56px;
+    padding: 32px 0px 28px 36px;
     color: black;
     background: #f2f2f2;
-    margin: 40px 8%;
+    margin: 28px 5%;
     border-radius: 35px;
-    text-decoration: none;
     box-shadow: 4px 4px 20px #cccccc;
+    width: 60%;
 }
 
-a :hover{
+#links :hover {
     background: #cccccc;
 }
 
+footer{
+    margin: 8%;
+}
 img{
-    width: 10px;
+    width: 50px;
+    padding: 8px;
+}
+
+img:hover {
+    opacity: 0.5;
+}
+@media only screen and (min-width: 768px) {
+    h2{
+        font-size: 72px;
+        padding: 10px 0px 0px 20%; 
+        margin: 80px 0px 0px 0px;
+    }
+    
+    p{
+        font-size: 48px;
+        padding: 10px 0px 0px 20%; 
+        margin: 10px 0px 0px 0px;
+    }
+
+    #links{
+        margin-top: 48px;
+    }
+    
+    #links a{
+        font-size: 2.2rem;
+        padding: 36px 0px 32px 36px;
+        margin: 40px 20%;
+    }
+
+    footer{
+        margin: 40px 20%;
+    }
+}
+
+@media only screen and (min-width: 2800px) {
+    body{
+        background-size:100%;
+    }
 }
